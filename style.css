@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEF0F2;
+  color: #141414;
+  transition: .5s;
+}
+
+
+/*Parte do header*/
+.cabecalho{
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho_menu_link{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d21a1;
+  text-decoration: none;
+}
+
+.trilho {
+  width: 80px;
+  height: 30px;
+  background-color: #CFD2DA;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.trilho .indicador {
+  width: 30px;
+  height: 30px;
+  background-color: #141414;
+  border-radius: 50%;
+  transform: scale(.8);
+  position: absolute;
+  left: 0;
+  transition: .5s;
+}
+
+.trilho.dark {
+  background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador {
+  left: 50px;
+  background-color: #EEF0F2;
+}
+
+body.dark {
+  background-color: #141414;
+  color: #EEF0F2;
+}
+
+
+/*Parte do Sobre mim*/
+main{ 
+  width: 100%;
+  height: 1200px;   
+  padding-top: 80px; 
+  overflow: hidden;
+}  
+
+.bloco_home{   
+  background-color: #EEF0F2; 
+  padding-left: 15% ;
+  padding-right: 15% ;
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+  display: flex;
+  flex-direction:row ;
+  gap: 200px;  
+  border-radius: 16px; 
+  margin-top: 100px;  
+  padding-top: 100px ;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.apresentacao{
+  font-size: 6rem; 
+  color: #EEF0F2; 
+  font-family: "Montserrat", sans-serif;
+  
+}
+.inicio{ 
+  width: 100%; 
+  height: 200px; 
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  padding-top: 3%;
+  background-color: #0d21a1;
+}
+.texto_sobre_mim{ 
+  width: 40%;
+  height: 500px; 
+  display: flex;
+  flex-direction: column;  
+  gap: 40px; 
+  align-items: center; 
+
+}
+
+.texto_sobre{
+  font-size: 2rem; 
+  color: #141414; 
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+strong{
+  color: #EEC643;
+} 
+
+.imagem_pessoal{
+  border-radius: 15px; 
+  background-color: #141414; 
+  width: 50%; /* Reduzida para caber ao lado do texto */
+  max-width: 500px;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.imagem_pessoal_img{
+  width: auto;
+  height: auto; 
+  border-radius: 10px;
+}
+
+/* Botoes com links para meu contato*/
+.apresentacao_links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #0d21a1;
+  padding: 80px 20px;
+  margin-top: 80px;
+}
+
+.apresentacao_links_subtitulo{
+  font-family: "Montserrat", sans-serif;;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:#EEF0F2
+  
+}
+
+.apresentacao_links_navegacao{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  text-align: center;
+  border: 2px solid #EEF0F2;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: #EEF0F2;
+  font-family: "Montserrat", sans-serif;;
+}
+
+.apresentacao_links_navegacao:hover {
+  background-color: #EEC643;
+  color: #141414;
+  border-color: #EEC643;
+}
+
+/* Seção Hobbies */
+.apresentacao_hobbies {
+  padding: 80px 15%;
+  background-color: #EEF0F2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #141414;
+}
+
+/* Currículo */
+#curriculo a::before {
+  content: "📥 ";
+}
+
+
+/* Modo escuro */
+body.dark {
+  background-color: #141414;
+  color: #EEF0F2;
+}
+
+body.dark .cabecalho_menu_link {
+  color: #EEF0F2;
+}
+
+body.dark .cabecalho_menu_link:hover {
+  color: #EEC643;
+}
+
+body.dark .inicio {
+  background-color: #0a174e;
+}
+
+body.dark .apresentacao_links {
+  background-color: #0a174e;
+}
+
+body.dark .apresentacao_links_subtitulo {
+  color: #EEF0F2;
+}
+
+body.dark .apresentacao_links_navegacao {
+  color: #EEF0F2;
+  border-color: #EEC643;
+}
+
+body.dark .apresentacao_links_navegacao:hover {
+  background-color: #EEC643;
+  color: #141414;
+  border-color: #EEC643;
+}
+
+body.dark .apresentacao_hobbies {
+  background-color: #1f1f1f;
+  color: #EEF0F2;
+}
+
+body.dark .bloco_home {
+  background-color: #1f1f1f;
+}
+
+body.dark .texto_sobre {
+  color: #EEF0F2;
+}
+
+body.dark .imagem_pessoal {
+  background-color: #EEF0F2;
+}
+
+body, .cabecalho_menu_link, .apresentacao_links_navegacao, .apresentacao_hobbies {
+  transition: background-color 0.5s, color 0.5s;
+}
