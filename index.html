@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portifólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho_menu">
+      <a class="cabecalho_menu_link" href="#sobre_mim">Sobre mim</a>
+      <a class="cabecalho_menu_link" href="#hobbies">Hobbies</a>
+      <a class="cabecalho_menu_link" href="#contato">Contato</a>
+      <a class="cabecalho_menu_link" href="#curriculo">Currículo</a>
+      <div class = "trilho" id = "trilho">
+        <div class = "indicador"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="inicio">
+      <h1 class="apresentacao"><strong>Olá,</strong> eu sou o Ranier</h1>
+    </div>
+
+    <div class="bloco_home" id="sobre_mim">
+      <div class="imagem_pessoal">
+        <img class="imagem_pessoal_img" src="imagempessoal.jpeg" alt="Foto de Ranier de casaco com neve atrás" />
+      </div>
+      <div class="texto_sobre_mim">
+        <p class="texto_sobre">Tenho 22 anos, sou estudante de Ciências da Computação na Universidade Federal de Roraima, estou no 4° semestre e trabalho com logística na empresa da minha família.</p>
+        <p class="texto_sobre">Sou proativo, gosto de trabalhar em equipe, principalmente na parte criativa e de planejamento. Minha linguagem de programação favorita é Java, com foco em back-end.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="apresentacao_links" id="contato">
+    <h2 class="apresentacao_links_subtitulo">Acesse minhas redes:</h2>
+    <a class="apresentacao_links_navegacao" href="https://github.com/RanierSales">GitHub</a>
+    <a class="apresentacao_links_navegacao" onclick="alert('Meu email é: ranierveras@gmail.com')">Email</a>
+    <a class="apresentacao_links_navegacao" href="https://www.linkedin.com/in/ranier-sales/">LinkedIn</a>
+  </div>
+  
+  <div class="apresentacao_hobbies" id="hobbies">
+    <h1><strong>Hobbies</strong></h1>
+    <p class="texto_sobre">No meu tempo livre, adoro jogar no computador — especialmente jogos de estratégia e RPG — ir à academia para manter o corpo ativo, praticar esportes como futebol e vôlei, e sair para jantar com amigos e família. Também gosto de explorar novas tecnologias e aprender algo novo sempre que posso.</p>
+  </div>
+
+  <div class="apresentacao_links" id="curriculo">
+    <h2 class="apresentacao_links_subtitulo">Baixe meu currículo:</h2>
+    <a class="apresentacao_links_navegacao" href="Curriculo.pdf" download>📄 Download Currículo</a>
+  </div>
+
+  <script src = "main.js"></script>
+</body>
+</html>
